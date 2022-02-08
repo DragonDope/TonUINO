@@ -18,7 +18,7 @@
 */
 
 // uncomment the below line to enable five button support
-//#define FIVEBUTTONS
+#define FIVEBUTTONS
 
 static const uint32_t cardCookie = 322417479;
 
@@ -639,15 +639,15 @@ byte trailerBlock = 7;
 MFRC522::StatusCode status;
 
 #define buttonPause A0
-#define buttonUp A1
-#define buttonDown A2
+#define buttonUp A5
+#define buttonDown A4
 #define busyPin 4
 #define shutdownPin 7
 #define openAnalogPin A7
 
 #ifdef FIVEBUTTONS
-#define buttonFourPin A3
-#define buttonFivePin A4
+#define buttonFourPin A2
+#define buttonFivePin A1
 #endif
 
 #define LONG_PRESS 1000
